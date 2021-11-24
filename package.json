@@ -1,0 +1,11 @@
+{
+  "name": "wewaves",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Ted Meftah <https://tedmeftah.com>",
+  "workspaces": [
+    "contract",
+    "frontent"
+  ]
+}

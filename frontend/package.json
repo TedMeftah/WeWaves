@@ -1,0 +1,39 @@
+{
+	"name": "@wewaves/frontend",
+	"private": true,
+	"version": "0.0.1",
+	"license": "MIT",
+	"author": "Ted Meftah <https://tedmeftah.com>",
+	"type": "module",
+	"scripts": {
+		"dev": "set NODE_ENV=development && svelte-kit dev",
+		"build": "set NODE_ENV=production && svelte-kit build",
+		"preview": "set NODE_ENV=production && svelte-kit preview",
+		"lint": "prettier --ignore-path .gitignore --check . && eslint .",
+		"format": "prettier --ignore-path .gitignore --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-node": "next",
+		"@sveltejs/adapter-static": "next",
+		"@sveltejs/kit": "next",
+		"@typescript-eslint/eslint-plugin": "^5.3.1",
+		"@typescript-eslint/parser": "^5.3.1",
+		"eslint": "^8.2.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^3.2.1",
+		"postcss-noop": "^1.0.1",
+		"prettier": "~2.4.1",
+		"prettier-plugin-svelte": "^2.4.0",
+		"svelte": "^3.44.1",
+		"svelte-preprocess": "^4.9.8",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.4",
+		"vite": "^2.6.14",
+		"vite-imagetools": "^4.0.0",
+		"vite-plugin-windicss": "^1.5.1",
+		"windicss": "^3.2.1"
+	},
+	"dependencies": {
+		"ethers": "^5.5.1"
+	}
+}
