@@ -13,6 +13,7 @@
 		"format": "prettier --ignore-path .gitignore --write ."
 	},
 	"devDependencies": {
+		"@metamask/providers": "^8.1.1",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",

@@ -3,6 +3,11 @@
 declare module '*&img'
 declare module 'virtual:windi-devtools'
 
-interface Window {
-	ethereum: any
+import type { providers } from 'ethers'
+import type { MetaMaskInpageProvider } from '@metamask/providers'
+
+declare global {
+	interface Window {
+		ethereum: ?(providers.ExternalProvider & MetaMaskInpageProvider)
+	}
 }
