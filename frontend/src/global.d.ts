@@ -4,5 +4,5 @@ declare module '*&img'
 declare module 'virtual:windi-devtools'
 
 interface Window {
-    ethereum: any
+	ethereum: any
 }
