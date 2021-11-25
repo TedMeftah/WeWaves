@@ -6,6 +6,6 @@
   "author": "Ted Meftah <https://tedmeftah.com>",
   "workspaces": [
     "contract",
-    "frontent"
+    "frontend"
   ]
 }
