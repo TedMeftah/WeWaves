@@ -20,9 +20,9 @@ const chainID = readable<string>(undefined, (set) => {
 	return () => window.ethereum.off('chainChanged', onChainChanged)
 })
 
-const provider = derived(account, ($account) =>
-	$account ? new providers.Web3Provider(window.ethereum) : undefined
-)
+const provider = derived([account, chainID], ([$account]) => {
+	return $account ? new providers.Web3Provider(window.ethereum) : undefined
+})
 
 const signer = derived(provider, ($provider) =>
 	$provider ? $provider.getSigner() : undefined
